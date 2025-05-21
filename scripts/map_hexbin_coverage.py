@@ -4,7 +4,6 @@ import logging
 import argparse
 import sys
 import os
-import datetime
 import pandas as pd
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
@@ -257,9 +256,9 @@ def main(args):
     cb = map_fig.colorbar(c, ax=map_ax, shrink=0.8, orientation='vertical')
     # Title the colorbar
     if log_scale:
-        cb.set_label('Coverage (log scale)')
+        cb.set_label('Total GPS Fixes (log scale)')
     else:
-        cb.set_label('Coverage (linear scale)')
+        cb.set_label('Total GPS Fixes (linear scale)')
 
     # Title the figure
     dt_string = '{:} - {:}'.format(deployments.end_date.min().strftime('%Y-%m-%d'), deployments.end_date.max().strftime('%Y-%m-%d'))
