@@ -2,4 +2,4 @@
 *.kml
 *.png
 *.DS_Store
-
+*output*
