@@ -49,13 +49,6 @@ def main(args):
     deployment_ids = deployments_df.index.tolist()
     erddap_ids = erddap_datasets.index.tolist()
     has_ids = []
-#    for eid in erddap_ids:
-#        has_erddap = False
-#        for did in deployment_ids:
-#            if eid.startswith(did):
-#                has_ids.append(eid)
-#                has_erddap = True
-
     for did in deployment_ids:
         has_erddap = False
         for eid in erddap_ids:
