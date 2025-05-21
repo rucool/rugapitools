@@ -49,10 +49,21 @@ def main(args):
     deployment_ids = deployments_df.index.tolist()
     erddap_ids = erddap_datasets.index.tolist()
     has_ids = []
-    for eid in erddap_ids:
-        for did in deployment_ids:
+#    for eid in erddap_ids:
+#        has_erddap = False
+#        for did in deployment_ids:
+#            if eid.startswith(did):
+#                has_ids.append(eid)
+#                has_erddap = True
+
+    for did in deployment_ids:
+        has_erddap = False
+        for eid in erddap_ids:
             if eid.startswith(did):
                 has_ids.append(eid)
+                has_erddap = True
+        if not has_erddap:
+            logging.warning('No ERDDAP datasets found for deploymnet {:}'.format(did))
 
     if not has_ids:
         logging.warning('No ERDDAP data sets found for deployment ids')
