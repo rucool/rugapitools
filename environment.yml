@@ -1,191 +1,237 @@
-name: rug
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - anyio
-  - attrs
-  - blosc
-  - boost-cpp
-  - branca
-  - brotli
-  - brotli-bin
-  - brotlipy
-  - bzip2
-  - c-ares
-  - ca-certificates
-  - cairo
-  - cartopy
-  - certifi
-  - cffi
-  - cfitsio
-  - cftime
-  - chardet
-  - charset-normalizer
-  - click
-  - click-plugins
-  - cligj
-  - cmocean
-  - colorspacious
-  - contourpy
-  - cool_maps
-  - cryptography
-  - ctd
-  - curl
-  - cycler
-  - erddapy
-  - expat
-  - fiona
-  - folium
-  - font-ttf-dejavu-sans-mono
-  - font-ttf-inconsolata
-  - font-ttf-source-code-pro
-  - font-ttf-ubuntu
-  - fontconfig
-  - fonts-conda-ecosystem
-  - fonts-conda-forge
-  - fonttools
-  - freetype
-  - freexl
-  - gdal
-  - geopandas
-  - geopandas-base
-  - geos
-  - geotiff
-  - gettext
-  - giflib
-  - gsw
-  - h11
-  - h2
-  - hdf4
-  - hdf5
-  - hpack
-  - httpcore
-  - httpx
-  - hyperframe
-  - icu
-  - idna
-  - importlib-metadata
-  - jinja2
-  - joblib
-  - json-c
-  - kealib
-  - kiwisolver
-  - krb5
-  - lcms2
-  - lerc
-  - libaec
-  - libblas
-  - libbrotlicommon
-  - libbrotlidec
-  - libbrotlienc
-  - libcblas
-  - libcurl
-  - libcxx
-  - libdeflate
-  - libedit
-  - libev
-  - libexpat
-  - libffi
-  - libgdal
-  - libgfortran
-  - libgfortran5
-  - libglib
-  - libiconv
-  - libjpeg-turbo
-  - libkml
-  - liblapack
-  - libnetcdf
-  - libnghttp2
-  - libopenblas
-  - libpng
-  - libpq
-  - librttopo
-  - libspatialindex
-  - libspatialite
-  - libsqlite
-  - libssh2
-  - libtiff
-  - libwebp-base
-  - libxcb
-  - libxml2
-  - libzip
-  - libzlib
-  - llvm-openmp
-  - lz4-c
-  - mapclassify
-  - markupsafe
-  - matplotlib
-  - matplotlib-base
-  - munch
-  - munkres
-  - ncurses
-  - netcdf4
-  - networkx
-  - nspr
-  - nss
-  - numpy
-  - oceans
-  - openjpeg
-  - openssl
-  - packaging
-  - pandas
-  - pandas-flavor
-  - pcre2
-  - pillow
-  - pip
-  - pixman
-  - platformdirs
-  - pooch
-  - poppler
-  - poppler-data
-  - postgresql
-  - proj
-  - pthread-stubs
-  - pycparser
-  - pyopenssl
-  - pyparsing
-  - pyproj
-  - pyshp
-  - pysocks
-  - python=3.8
-  - python-dateutil
-  - python-tzdata
-  - python_abi
-  - pytz
-  - pyyaml
-  - readline
-  - requests
-  - rtree
-  - scikit-learn
-  - scipy
-  - seawater
-  - setuptools
-  - shapely
-  - six
-  - snappy
-  - sniffio
-  - sqlite
-  - tabulate
-  - threadpoolctl
-  - tiledb
-  - tk
-  - tornado
-  - typing-extensions
-  - typing_extensions
-  - tzcode
-  - tzdata
-  - unicodedata2
-  - urllib3
-  - wheel
-  - xarray
-  - xerces-c
-  - xorg-libxau
-  - xorg-libxdmcp
-  - xyzservices
-  - xz
-  - yaml
-  - zipp
-  - zlib
-  - zstd
-prefix: /Users/kerfoot/anaconda3/envs/rug
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-arm64
+anyio
+attrs
+aws-c-auth
+aws-c-cal
+aws-c-common
+aws-c-compression
+aws-c-event-stream
+aws-c-http
+aws-c-io
+aws-c-mqtt
+aws-c-s3
+aws-c-sdkutils
+aws-checksums
+aws-crt-cpp
+aws-sdk-cpp
+azure-core-cpp
+azure-storage-blobs-cpp
+azure-storage-common-cpp
+basemap
+basemap-data
+blosc
+branca
+brotli
+brotli-bin
+brotli-python
+bzip2
+c-ares
+ca-certificates
+cairo
+cartopy
+certifi
+cfitsio
+cftime
+charset-normalizer
+click
+click-plugins
+cligj
+cmocean
+colorama
+colorspacious
+contourpy
+cycler
+cyrus-sasl
+erddapy
+exceptiongroup
+expat
+fiona
+fmt
+folium
+font-ttf-dejavu-sans-mono
+font-ttf-inconsolata
+font-ttf-source-code-pro
+font-ttf-ubuntu
+fontconfig
+fonts-conda-ecosystem
+fonts-conda-forge
+fonttools
+freetype
+freexl
+gdal
+geographiclib
+geopandas
+geopandas-base
+geopy
+geos
+geotiff
+gettext
+gettext-tools
+giflib
+glidertools
+gsw
+h11
+h2
+hdf4
+hdf5
+hpack
+httpcore
+httpx
+hyperframe
+icu
+idna
+jinja2
+joblib
+json-c
+kealib
+kiwisolver
+krb5
+lcms2
+lerc
+libabseil
+libaec
+libarchive
+libasprintf
+libasprintf-devel
+libblas
+libboost-headers
+libbrotlicommon
+libbrotlidec
+libbrotlienc
+libcblas
+libcrc32c
+libcurl
+libcxx
+libdeflate
+libedit
+libev
+libevent
+libexpat
+libffi
+libgdal
+libgettextpo
+libgettextpo-devel
+libgfortran
+libgfortran5
+libglib
+libgoogle-cloud
+libgoogle-cloud-storage
+libgrpc
+libiconv
+libintl
+libintl-devel
+libjpeg-turbo
+libkml
+liblapack
+libnetcdf
+libnghttp2
+libntlm
+libopenblas
+libpng
+libpq
+libprotobuf
+libre2-11
+librttopo
+libspatialindex
+libspatialite
+libsqlite
+libssh2
+libtiff
+libwebp-base
+libxcb
+libxml2
+libzip
+libzlib
+llvm-openmp
+lz4-c
+lzo
+macports-legacy-support
+mapclassify
+markupsafe
+matplotlib
+matplotlib-base
+minizip
+munkres
+mysql
+mysql-client
+mysql-common
+mysql-connector-python
+mysql-devel
+mysql-libs
+mysql-server
+narwhals
+natsort
+ncurses
+netcdf4
+networkx
+nspr
+nss
+numexpr
+numpy
+openjpeg
+openssl
+packaging
+pandas
+patsy
+pcre2
+pillow
+pip
+pixman
+plotly
+poppler
+poppler-data
+postgresql
+proj
+pthread-stubs
+pyaml
+pyparsing
+pyproj
+pyshp
+pysocks
+python
+python-dateutil
+python-tzdata
+python_abi
+pytz
+pyyaml
+re2
+readline
+requests
+rtree
+scikit-learn
+scipy
+seaborn
+seaborn-base
+setuptools
+shapely
+six
+snappy
+sniffio
+spdlog
+sqlite
+statsmodels
+tabulate
+threadpoolctl
+tiledb
+tk
+tornado
+tqdm
+typing_extensions
+tzcode
+tzdata
+uriparser
+urllib3
+wheel
+xarray
+xerces-c
+xmljson
+xmltodict
+xorg-libxau
+xorg-libxdmcp
+xyzservices
+xz
+yaml
+zlib
+zstd
