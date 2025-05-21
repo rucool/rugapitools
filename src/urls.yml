@@ -1,0 +1,45 @@
+# List of U.S. IOOS National Glider Data Assembly Center urls for creation of erddapy-style end points. This list is
+# parsed by BASE/gdutils/urls.create_urls() to create the endpoints object.  The endpoints is imported using
+#
+# from gdutils.urls import end_points
+#
+
+DEPLOYMENTS:
+  description: All registered deployments
+  url: https://marine.rutgers.edu/cool/data/gliders/api/deployments
+  args:
+    deployment: ''
+    type:
+      - gliders
+      - years
+      - payloads
+ACTIVE_DEPLOYMENTS:
+  description: Active deployments
+  url: https://marine.rutgers.edu/cool/data/gliders/api/deployments/?active
+  args: {}
+GLIDERS:
+  description: Registered gliders
+  url: https://marine.rutgers.edu/cool/data/gliders/api/gliders
+  args: {}
+PROJECTS:
+  description: Registered deployment projects
+  url: https://marine.rutgers.edu/cool/data/gliders/api/projects
+  args: {}
+INSTRUMENTS:
+  description: Registered instruments
+  url: https://marine.rutgers.edu/cool/data/gliders/api/instruments
+  args: {}
+PAYLOAD_BAYS:
+  description: Registered payload bays
+  url: https://marine.rutgers.edu/cool/data/gliders/api/bays
+  args: {}
+TRACKS:
+  description: Deployment GPS tracks base url
+  url: https://marine.rutgers.edu/cool/data/gliders/api/tracks
+  args:
+    - deployment
+SURFACINGS:
+  description: Deployment surface events
+  url: https://marine.rutgers.edu/cool/data/gliders/api/surfacings
+  args:
+    - deployment

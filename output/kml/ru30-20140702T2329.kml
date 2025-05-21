@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<Document>
+
+    <name>RUCOOL Glider Deployments</name>
+    <description>1 Total Deployments</description>
+    <open>1</open>
+
+    
+    <!-- ru30 Deployment Position -->
+    <Style id="ru30Deployment">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F000</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru30 Current Position -->
+    <Style id="ru30Position">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F0FF</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru30 Track -->
+    <Style id="ru30Track">;
+        <LineStyle>
+            <color>ff00ffff</color>;
+            <width>2</width>
+        </LineStyle>
+    </Style>
+
+    <Folder id="ru30"> <!-- Glider: ru30 -->
+        <styleUrl>#ru30</styleUrl>
+        <name>ru30-20140702T2329</name>
+        <open>0</open>
+        <Placemark id="latestPosition">
+        <name>ru30-20140702T2329</name>
+        <styleUrl>#ru30Position</styleUrl>
+        <visibility>0</visibility>
+        <open>0</open>
+        <description>
+            <![CDATA[
+            <table bgcolor="white">
+                    <tr><th width="200" align="right">deployment:</th><td width="200">ru30-20140702T2329</td></tr><tr><th width="200" align="right">status:</th><td width="200">Recovered</td></tr><tr><th width="200" align="right">glider:</th><td width="200">ru30</td></tr><tr><th width="200" align="right">project:</th><td width="200">CINAR</td></tr><tr><th width="200" align="right">start_date:</th><td width="200">2014-07-02 23:29:29</td></tr><tr><th width="200" align="right">end_date:</th><td width="200">2014-07-09 12:55:00</td></tr><tr><th width="200" align="right">distance:</th><td width="200">94.444 km</td></tr><tr><th width="200" align="right">days:</th><td width="200">6</td></tr>
+            </table>
+            ]]>
+        </description>
+        <Point>
+            <extrude>0</extrude>
+            <altitudeMode>absolute</altitudeMode>
+            <coordinates>-73.754,39.754,5</coordinates>
+        </Point>
+        </Placemark> <!-- #currentPosition -->
+        <Placemark id="deploymentLocation">
+            <name>ru30</name>
+            <visibility>0</visibility>
+            <open>0</open>
+            <styleUrl>#ru30Deployment</styleUrl>
+            <description>
+                <![CDATA[<div align="center" width="200">Deployed on 2014-07-02 23:29:29</div>]]>
+            </description>
+        <Point>
+        <extrude>0</extrude>
+        <altitudeMode>absolute</altitudeMode>
+            <coordinates>-73.924,39.762,5</coordinates>
+        </Point>
+        </Placemark>
+        
+        <Placemark>
+            <name>Track</name>
+            <styleUrl>#ru30Track</styleUrl>
+            <Snippet></Snippet>
+            <LineString>
+                <extrude>0</extrude>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                    
+                    -73.924,39.762,5
+                    -73.924,39.764,5
+                    -73.917,39.765,5
+                    -73.91,39.767,5
+                    -73.903,39.771,5
+                    -73.885,39.772,5
+                    -73.865,39.772,5
+                    -73.847,39.773,5
+                    -73.835,39.781,5
+                    -73.817,39.787,5
+                    -73.792,39.791,5
+                    -73.764,39.788,5
+                    -73.745,39.775,5
+                    -73.73,39.772,5
+                    -73.728,39.775,5
+                    -73.72,39.779,5
+                    -73.718,39.781,5
+                    -73.71,39.784,5
+                    -73.708,39.785,5
+                    -73.697,39.788,5
+                    -73.695,39.788,5
+                    -73.683,39.789,5
+                    -73.681,39.788,5
+                    -73.67,39.786,5
+                    -73.669,39.785,5
+                    -73.658,39.782,5
+                    -73.657,39.781,5
+                    -73.648,39.779,5
+                    -73.649,39.778,5
+                    -73.642,39.778,5
+                    -73.644,39.778,5
+                    -73.64,39.78,5
+                    -73.642,39.779,5
+                    -73.637,39.781,5
+                    -73.64,39.779,5
+                    -73.636,39.777,5
+                    -73.639,39.774,5
+                    -73.635,39.768,5
+                    -73.639,39.764,5
+                    -73.637,39.754,5
+                    -73.643,39.747,5
+                    -73.643,39.731,5
+                    -73.647,39.725,5
+                    -73.647,39.709,5
+                    -73.65,39.703,5
+                    -73.654,39.683,5
+                    -73.657,39.678,5
+                    -73.662,39.663,5
+                    -73.666,39.659,5
+                    -73.671,39.649,5
+                    -73.675,39.647,5
+                    -73.677,39.638,5
+                    -73.68,39.637,5
+                    -73.679,39.632,5
+                    -73.679,39.631,5
+                    -73.674,39.625,5
+                    -73.673,39.624,5
+                    -73.663,39.618,5
+                    -73.662,39.616,5
+                    -73.652,39.609,5
+                    -73.65,39.606,5
+                    -73.642,39.599,5
+                    -73.641,39.596,5
+                    -73.635,39.59,5
+                    -73.635,39.59,5
+                    -73.635,39.586,5
+                    -73.631,39.58,5
+                    -73.632,39.578,5
+                    -73.628,39.574,5
+                    -73.63,39.572,5
+                    -73.624,39.571,5
+                    -73.626,39.57,5
+                    -73.618,39.571,5
+                    -73.619,39.571,5
+                    -73.606,39.572,5
+                    -73.607,39.572,5
+                    -73.593,39.572,5
+                    -73.592,39.571,5
+                    -73.576,39.57,5
+                    -73.574,39.571,5
+                    -73.558,39.568,5
+                    -73.555,39.569,5
+                    -73.543,39.567,5
+                    -73.546,39.57,5
+                    -73.551,39.576,5
+                    -73.556,39.581,5
+                    -73.565,39.588,5
+                    -73.564,39.589,5
+                    -73.569,39.587,5
+                    -73.584,39.588,5
+                    -73.603,39.596,5
+                    -73.618,39.607,5
+                    -73.626,39.611,5
+                    -73.626,39.611,5
+                    -73.629,39.608,5
+                    -73.636,39.604,5
+                    -73.64,39.608,5
+                    -73.652,39.617,5
+                    -73.655,39.625,5
+                    -73.656,39.628,5
+                    -73.662,39.631,5
+                    -73.68,39.641,5
+                    -73.699,39.655,5
+                    -73.71,39.666,5
+                    -73.71,39.666,5
+                    -73.71,39.679,5
+                    -73.712,39.688,5
+                    -73.721,39.698,5
+                    -73.733,39.716,5
+                    -73.742,39.734,5
+                    -73.749,39.748,5
+                    -73.755,39.754,5
+                    -73.755,39.753,5
+                    -73.754,39.753,5
+                    -73.752,39.754,5
+                    -73.752,39.754,5
+                    -73.751,39.754,5
+                    -73.75,39.754,5
+                    -73.754,39.754,5
+                    -73.754,39.754,5
+                    -73.754,39.754,5
+                    -73.754,39.754,5
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Folder> <!-- #ru30 -->
+    
+
+</Document>
+</kml>

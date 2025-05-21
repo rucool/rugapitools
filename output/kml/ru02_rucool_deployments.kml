@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<Document>
+
+    <name>RUCOOL RU02 Datasets</name>
+    <description>3 Total Deployments</description>
+    <open>1</open>
+
+    
+    <!-- ru02 Deployment Position -->
+    <Style id="ru02Deployment">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F000</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru02 Current Position -->
+    <Style id="ru02Position">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F0FF</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru02 Track -->
+    <Style id="ru02Track">;
+        <LineStyle>
+            <color>ff00ffff</color>;
+            <width>2</width>
+        </LineStyle>
+    </Style>
+
+    <Folder id="ru02"> <!-- Glider: ru02 -->
+        <styleUrl>#ru02</styleUrl>
+        <name>ru02-20050809T1940</name>
+        <open>0</open>
+        <Placemark id="latestPosition">
+        <name>ru02-20050809T1940</name>
+        <styleUrl>#ru02Position</styleUrl>
+        <visibility>0</visibility>
+        <open>0</open>
+        <description>
+            <![CDATA[
+            <table bgcolor="white">
+                    <tr><th width="200" align="right">deployment:</th><td width="200">ru02-20050809T1940</td></tr><tr><th width="200" align="right">status:</th><td width="200">Recovered</td></tr><tr><th width="200" align="right">glider:</th><td width="200">ru02</td></tr><tr><th width="200" align="right">project:</th><td width="200">EDDIES</td></tr><tr><th width="200" align="right">start_date:</th><td width="200">2005-08-09 19:40:00</td></tr><tr><th width="200" align="right">end_date:</th><td width="200">2005-08-17 15:45:00</td></tr><tr><th width="200" align="right">distance:</th><td width="200">174.611 km</td></tr><tr><th width="200" align="right">days:</th><td width="200">7</td></tr>
+            </table>
+            ]]>
+        </description>
+        <Point>
+            <extrude>0</extrude>
+            <altitudeMode>absolute</altitudeMode>
+            <coordinates>-68.321,30.16,5</coordinates>
+        </Point>
+        </Placemark> <!-- #currentPosition -->
+        <Placemark id="deploymentLocation">
+            <name>ru02</name>
+            <visibility>0</visibility>
+            <open>0</open>
+            <styleUrl>#ru02Deployment</styleUrl>
+            <description>
+                <![CDATA[<div align="center" width="200">Deployed on 2005-08-09 19:40:00</div>]]>
+            </description>
+        <Point>
+        <extrude>0</extrude>
+        <altitudeMode>absolute</altitudeMode>
+            <coordinates>-68.164,29.981,5</coordinates>
+        </Point>
+        </Placemark>
+        
+        <Placemark>
+            <name>Track</name>
+            <styleUrl>#ru02Track</styleUrl>
+            <Snippet></Snippet>
+            <LineString>
+                <extrude>0</extrude>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                    
+                    -68.164,29.981,5
+                    -68.181,29.969,5
+                    -68.189,29.965,5
+                    -68.196,29.961,5
+                    -68.202,29.958,5
+                    -68.21,29.955,5
+                    -68.219,29.954,5
+                    -68.226,29.954,5
+                    -68.234,29.955,5
+                    -68.235,29.955,5
+                    -68.242,29.956,5
+                    -68.25,29.958,5
+                    -68.256,29.961,5
+                    -68.263,29.965,5
+                    -68.271,29.971,5
+                    -68.255,30.082,5
+                    -68.251,30.093,5
+                    -68.251,30.093,5
+                    -68.176,30.12,5
+                    -68.117,30.108,5
+                    -68.109,30.114,5
+                    -68.105,30.123,5
+                    -68.118,30.148,5
+                    -68.096,30.16,5
+                    -68.112,30.127,5
+                    -68.155,30.118,5
+                    -68.172,30.141,5
+                    -68.173,30.11,5
+                    -68.173,30.11,5
+                    -68.203,30.038,5
+                    -68.319,30.02,5
+                    -68.378,30.029,5
+                    -68.383,29.991,5
+                    -68.379,29.988,5
+                    -68.393,29.984,5
+                    -68.396,29.98,5
+                    -68.449,30.014,5
+                    -68.465,30.036,5
+                    -68.448,30.058,5
+                    -68.419,30.046,5
+                    -68.422,29.985,5
+                    -68.481,29.99,5
+                    -68.496,30.008,5
+                    -68.491,30.053,5
+                    -68.447,30.105,5
+                    -68.436,30.107,5
+                    -68.409,30.093,5
+                    -68.457,30.092,5
+                    -68.467,30.097,5
+                    -68.442,30.174,5
+                    -68.321,30.16,5
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Folder> <!-- #ru02 -->
+    
+    <!-- ru02 Deployment Position -->
+    <Style id="ru02Deployment">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F000</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru02 Current Position -->
+    <Style id="ru02Position">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F0FF</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru02 Track -->
+    <Style id="ru02Track">;
+        <LineStyle>
+            <color>ff00ffff</color>;
+            <width>2</width>
+        </LineStyle>
+    </Style>
+
+    <Folder id="ru02"> <!-- Glider: ru02 -->
+        <styleUrl>#ru02</styleUrl>
+        <name>ru02-20050706T1249</name>
+        <open>0</open>
+        <Placemark id="latestPosition">
+        <name>ru02-20050706T1249</name>
+        <styleUrl>#ru02Position</styleUrl>
+        <visibility>0</visibility>
+        <open>0</open>
+        <description>
+            <![CDATA[
+            <table bgcolor="white">
+                    <tr><th width="200" align="right">deployment:</th><td width="200">ru02-20050706T1249</td></tr><tr><th width="200" align="right">status:</th><td width="200">Recovered</td></tr><tr><th width="200" align="right">glider:</th><td width="200">ru02</td></tr><tr><th width="200" align="right">project:</th><td width="200">EDDIES</td></tr><tr><th width="200" align="right">start_date:</th><td width="200">2005-07-06 12:49:00</td></tr><tr><th width="200" align="right">end_date:</th><td width="200">2005-08-02 19:21:00</td></tr><tr><th width="200" align="right">distance:</th><td width="200">593.206 km</td></tr><tr><th width="200" align="right">days:</th><td width="200">27</td></tr>
+            </table>
+            ]]>
+        </description>
+        <Point>
+            <extrude>0</extrude>
+            <altitudeMode>absolute</altitudeMode>
+            <coordinates>-67.743,29.975,5</coordinates>
+        </Point>
+        </Placemark> <!-- #currentPosition -->
+        <Placemark id="deploymentLocation">
+            <name>ru02</name>
+            <visibility>0</visibility>
+            <open>0</open>
+            <styleUrl>#ru02Deployment</styleUrl>
+            <description>
+                <![CDATA[<div align="center" width="200">Deployed on 2005-07-06 12:49:00</div>]]>
+            </description>
+        <Point>
+        <extrude>0</extrude>
+        <altitudeMode>absolute</altitudeMode>
+            <coordinates>-66.284,31.435,5</coordinates>
+        </Point>
+        </Placemark>
+        
+        <Placemark>
+            <name>Track</name>
+            <styleUrl>#ru02Track</styleUrl>
+            <Snippet></Snippet>
+            <LineString>
+                <extrude>0</extrude>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                    
+                    -66.284,31.435,5
+                    -66.23,31.355,5
+                    -66.176,31.273,5
+                    -66.148,31.177,5
+                    -66.146,31.092,5
+                    -66.146,31.092,5
+                    -66.146,31.092,5
+                    -66.154,31.004,5
+                    -66.192,30.942,5
+                    -66.202,30.932,5
+                    -66.234,30.884,5
+                    -66.297,30.839,5
+                    -66.312,30.833,5
+                    -66.346,30.827,5
+                    -66.378,30.83,5
+                    -66.378,30.83,5
+                    -66.388,30.829,5
+                    -66.453,30.839,5
+                    -66.453,30.839,5
+                    -66.453,30.839,5
+                    -66.484,30.858,5
+                    -66.457,30.892,5
+                    -66.478,30.893,5
+                    -66.482,30.895,5
+                    -66.487,30.899,5
+                    -66.413,30.911,5
+                    -66.391,30.915,5
+                    -66.385,30.86,5
+                    -66.385,30.86,5
+                    -66.385,30.858,5
+                    -66.419,30.839,5
+                    -66.416,30.839,5
+                    -66.415,30.839,5
+                    -66.415,30.839,5
+                    -66.429,30.831,5
+                    -66.427,30.828,5
+                    -66.438,30.823,5
+                    -66.44,30.819,5
+                    -66.438,30.822,5
+                    -66.462,30.713,5
+                    -66.468,30.701,5
+                    -66.506,30.643,5
+                    -66.505,30.641,5
+                    -66.605,30.593,5
+                    -66.607,30.592,5
+                    -66.614,30.587,5
+                    -66.606,30.59,5
+                    -66.602,30.587,5
+                    -66.602,30.586,5
+                    -66.715,30.559,5
+                    -66.808,30.567,5
+                    -66.906,30.723,5
+                    -66.983,30.799,5
+                    -66.983,30.799,5
+                    -66.911,30.822,5
+                    -66.907,30.821,5
+                    -66.82,30.869,5
+                    -66.826,30.868,5
+                    -66.827,30.868,5
+                    -66.699,30.933,5
+                    -66.687,30.927,5
+                    -66.687,30.927,5
+                    -66.685,30.926,5
+                    -66.677,30.935,5
+                    -66.669,30.952,5
+                    -66.656,30.952,5
+                    -66.641,30.912,5
+                    -66.63,30.901,5
+                    -66.628,30.898,5
+                    -66.627,30.898,5
+                    -66.627,30.898,5
+                    -66.625,30.894,5
+                    -66.624,30.893,5
+                    -66.652,30.725,5
+                    -66.656,30.727,5
+                    -66.656,30.727,5
+                    -66.67,30.703,5
+                    -66.684,30.679,5
+                    -66.705,30.597,5
+                    -66.703,30.592,5
+                    -66.746,30.519,5
+                    -66.811,30.463,5
+                    -66.949,30.445,5
+                    -66.949,30.445,5
+                    -66.981,30.449,5
+                    -66.971,30.482,5
+                    -66.986,30.474,5
+                    -66.99,30.465,5
+                    -66.971,30.479,5
+                    -66.968,30.462,5
+                    -66.983,30.424,5
+                    -66.974,30.405,5
+                    -66.969,30.395,5
+                    -66.963,30.385,5
+                    -66.999,30.306,5
+                    -67.048,30.223,5
+                    -67.115,30.166,5
+                    -67.213,30.137,5
+                    -67.285,30.134,5
+                    -67.347,30.11,5
+                    -67.416,30.089,5
+                    -67.508,30.089,5
+                    -67.531,30.106,5
+                    -67.532,30.098,5
+                    -67.537,30.094,5
+                    -67.561,30.096,5
+                    -67.56,30.132,5
+                    -67.526,30.16,5
+                    -67.507,30.165,5
+                    -67.476,30.203,5
+                    -67.453,30.247,5
+                    -67.425,30.322,5
+                    -67.376,30.272,5
+                    -67.313,30.202,5
+                    -67.306,30.106,5
+                    -67.362,30.052,5
+                    -67.37,30.052,5
+                    -67.446,30.043,5
+                    -67.454,30.045,5
+                    -67.495,30.041,5
+                    -67.553,30.026,5
+                    -67.655,30.044,5
+                    -67.719,30.083,5
+                    -67.703,30.089,5
+                    -67.717,30.072,5
+                    -67.774,30.068,5
+                    -67.758,30.099,5
+                    -67.758,30.099,5
+                    -67.742,30.108,5
+                    -67.711,30.099,5
+                    -67.718,30.073,5
+                    -67.76,30.061,5
+                    -67.755,30.072,5
+                    -67.75,30.079,5
+                    -67.75,30.079,5
+                    -67.729,30.075,5
+                    -67.733,30.044,5
+                    -67.766,30.022,5
+                    -67.747,30.029,5
+                    -67.749,30.031,5
+                    -67.731,30.04,5
+                    -67.719,30.06,5
+                    -67.685,30.055,5
+                    -67.645,30.031,5
+                    -67.621,29.995,5
+                    -67.624,29.991,5
+                    -67.639,29.992,5
+                    -67.645,29.993,5
+                    -67.649,29.995,5
+                    -67.649,29.995,5
+                    -67.663,29.992,5
+                    -67.675,29.99,5
+                    -67.686,29.988,5
+                    -67.696,29.985,5
+                    -67.703,29.983,5
+                    -67.715,29.98,5
+                    -67.721,29.977,5
+                    -67.733,29.976,5
+                    -67.743,29.975,5
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Folder> <!-- #ru02 -->
+    
+    <!-- ru02 Deployment Position -->
+    <Style id="ru02Deployment">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F000</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru02 Current Position -->
+    <Style id="ru02Position">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F0FF</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru02 Track -->
+    <Style id="ru02Track">;
+        <LineStyle>
+            <color>ff00ffff</color>;
+            <width>2</width>
+        </LineStyle>
+    </Style>
+
+    <Folder id="ru02"> <!-- Glider: ru02 -->
+        <styleUrl>#ru02</styleUrl>
+        <name>ru02-20050419T1345</name>
+        <open>0</open>
+        <Placemark id="latestPosition">
+        <name>ru02-20050419T1345</name>
+        <styleUrl>#ru02Position</styleUrl>
+        <visibility>0</visibility>
+        <open>0</open>
+        <description>
+            <![CDATA[
+            <table bgcolor="white">
+                    <tr><th width="200" align="right">deployment:</th><td width="200">ru02-20050419T1345</td></tr><tr><th width="200" align="right">status:</th><td width="200">Recovered</td></tr><tr><th width="200" align="right">glider:</th><td width="200">ru02</td></tr><tr><th width="200" align="right">project:</th><td width="200">MIREM</td></tr><tr><th width="200" align="right">start_date:</th><td width="200">2005-04-19 13:45:00</td></tr><tr><th width="200" align="right">end_date:</th><td width="200">2005-04-19 20:10:00</td></tr><tr><th width="200" align="right">distance:</th><td width="200">0.569 km</td></tr><tr><th width="200" align="right">days:</th><td width="200">0</td></tr>
+            </table>
+            ]]>
+        </description>
+        <Point>
+            <extrude>0</extrude>
+            <altitudeMode>absolute</altitudeMode>
+            <coordinates>-75.583,36.966,5</coordinates>
+        </Point>
+        </Placemark> <!-- #currentPosition -->
+        <Placemark id="deploymentLocation">
+            <name>ru02</name>
+            <visibility>0</visibility>
+            <open>0</open>
+            <styleUrl>#ru02Deployment</styleUrl>
+            <description>
+                <![CDATA[<div align="center" width="200">Deployed on 2005-04-19 13:45:00</div>]]>
+            </description>
+        <Point>
+        <extrude>0</extrude>
+        <altitudeMode>absolute</altitudeMode>
+            <coordinates>-75.583,36.966,5</coordinates>
+        </Point>
+        </Placemark>
+        
+        <Placemark>
+            <name>Track</name>
+            <styleUrl>#ru02Track</styleUrl>
+            <Snippet></Snippet>
+            <LineString>
+                <extrude>0</extrude>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                    
+                    -75.583,36.966,5
+                    -75.583,36.966,5
+                    -75.583,36.966,5
+                    -75.583,36.966,5
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Folder> <!-- #ru02 -->
+    
+
+</Document>
+</kml>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<Document>
+
+    <name>RUCOOL Glider Deployments</name>
+    <description>1 Total Deployments</description>
+    <open>1</open>
+
+    
+    <!-- ru05 Deployment Position -->
+    <Style id="ru05Deployment">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F000</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru05 Current Position -->
+    <Style id="ru05Position">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F0FF</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru05 Track -->
+    <Style id="ru05Track">;
+        <LineStyle>
+            <color>ff00ffff</color>;
+            <width>2</width>
+        </LineStyle>
+    </Style>
+
+    <Folder id="ru05"> <!-- Glider: ru05 -->
+        <styleUrl>#ru05</styleUrl>
+        <name>ru05-20060427T1451</name>
+        <open>0</open>
+        <Placemark id="latestPosition">
+        <name>ru05-20060427T1451</name>
+        <styleUrl>#ru05Position</styleUrl>
+        <visibility>0</visibility>
+        <open>0</open>
+        <description>
+            <![CDATA[
+            <table bgcolor="white">
+                    <tr><th width="200" align="right">deployment:</th><td width="200">ru05-20060427T1451</td></tr><tr><th width="200" align="right">status:</th><td width="200">Recovered</td></tr><tr><th width="200" align="right">glider:</th><td width="200">ru05</td></tr><tr><th width="200" align="right">project:</th><td width="200">eline</td></tr><tr><th width="200" align="right">start_date:</th><td width="200">2006-04-27 14:51:00</td></tr><tr><th width="200" align="right">end_date:</th><td width="200">2006-05-04 15:00:00</td></tr><tr><th width="200" align="right">distance:</th><td width="200">142.13 km</td></tr><tr><th width="200" align="right">days:</th><td width="200">7</td></tr>
+            </table>
+            ]]>
+        </description>
+        <Point>
+            <extrude>0</extrude>
+            <altitudeMode>absolute</altitudeMode>
+            <coordinates>-73.594,38.757,5</coordinates>
+        </Point>
+        </Placemark> <!-- #currentPosition -->
+        <Placemark id="deploymentLocation">
+            <name>ru05</name>
+            <visibility>0</visibility>
+            <open>0</open>
+            <styleUrl>#ru05Deployment</styleUrl>
+            <description>
+                <![CDATA[<div align="center" width="200">Deployed on 2006-04-27 14:51:00</div>]]>
+            </description>
+        <Point>
+        <extrude>0</extrude>
+        <altitudeMode>absolute</altitudeMode>
+            <coordinates>-74.179,39.412,5</coordinates>
+        </Point>
+        </Placemark>
+        
+        <Placemark>
+            <name>Track</name>
+            <styleUrl>#ru05Track</styleUrl>
+            <Snippet></Snippet>
+            <LineString>
+                <extrude>0</extrude>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                    
+                    -74.179,39.412,5
+                    -74.116,39.393,5
+                    -74.036,39.376,5
+                    -73.989,39.336,5
+                    -73.943,39.285,5
+                    -73.933,39.228,5
+                    -73.933,39.228,5
+                    -73.882,39.21,5
+                    -73.82,39.197,5
+                    -73.756,39.191,5
+                    -73.723,39.156,5
+                    -73.719,39.159,5
+                    -73.68,39.145,5
+                    -73.626,39.093,5
+                    -73.631,39.088,5
+                    -73.602,39.072,5
+                    -73.581,39.045,5
+                    -73.556,39.039,5
+                    -73.519,39.004,5
+                    -73.509,38.99,5
+                    -73.523,38.949,5
+                    -73.56,38.933,5
+                    -73.553,38.894,5
+                    -73.554,38.867,5
+                    -73.549,38.854,5
+                    -73.538,38.833,5
+                    -73.569,38.829,5
+                    -73.569,38.829,5
+                    -73.587,38.831,5
+                    -73.588,38.832,5
+                    -73.59,38.832,5
+                    -73.589,38.831,5
+                    -73.589,38.831,5
+                    -73.594,38.757,5
+                    -73.594,38.757,5
+                    -73.594,38.757,5
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Folder> <!-- #ru05 -->
+    
+
+</Document>
+</kml>

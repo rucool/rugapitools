@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<Document>
+
+    <name>Profiling Gliders</name>
+    <description>Real-Time data from profiling gliders reporting to the <a href="https://gliders.ioos.us/">U.S. IOOS Glider Data Assembly Center</a></description>
+    <open>1</open>
+
+    {% for track in tracks %}
+    <!-- {{ track.features[0].properties.glider }} Deployment Position -->
+    <Style id="{{ track.features[0].properties.glider }}Deployment">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+            </Icon>
+            <hotSpot x="0.5" xunits="fraction" y="0" units="fraction"/>
+            <scale>1</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- {{ track.features[0].properties.glider }} Current Position -->
+    <Style id="{{ track.features[0].properties.glider }}Position">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href>
+            </Icon>
+            <hotSpot x="0.5" xunits="fraction" y="0" units="fraction"/>
+            <!--
+                <hotSpot x="0" xunits="fraction" y="0.5" units="fraction"/>
+            -->
+            <scale>1</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- {{ track.features[0].properties.glider }} Track -->
+    <Style id="{{ track.features[0].properties.glider }}Track">;
+        <LineStyle>
+            <color>ff00ffff</color>;
+            <width>2</width>
+        </LineStyle>
+    </Style>
+
+    <Folder id="{{ track.features[0].properties.glider }}"> <!-- Glider: {{ track.features[0].properties.glider }} -->
+        <styleUrl>#{{ track.features[0].properties.glider }}</styleUrl>
+        <name>{{ track.features[0].properties.dataset_id }}</name>
+        <open>0</open>
+        <Placemark id="latestPosition">
+        <name>Profiling Glider {{ track.features[0].properties.glider }} Latest Position</name>
+        <styleUrl>#{{ track.features[0].properties.glider }}Position</styleUrl>
+        <visibility>1</visibility>
+        <open>0</open>
+        <description>
+            <![CDATA[
+            <table bgcolor="white">
+                <tr><th width="200" align="right">WMO ID:</th><td width="200">{{ track.features[0].properties.wmo_id }}</td></tr>
+                <tr><th width="200" align="right">Deployed:</th><td width="200">{{ track.features[0].properties.start_date }}</td></tr>
+                <tr><th width="200" align="right">Last Reported:</th><td width="200">{{ track.features[0].properties.end_ts }}</td></tr>
+                <tr><th width="200" align="right">Last Location:</th><td width="200">{{ track.features[-1].geometry.coordinates[1] }}, {{ track.features[-1].geometry.coordinates[0] }}</td></tr>
+                <tr><th width="200" align="right">Institution:</th><td width="200">{{ track.features[0].properties.institution }}</td></tr>
+                <tr><th width="200" align="right">&#35; Profiles:</th><td width="200">{{ track.features[0].properties.num_profiles }}</td></tr>
+                <tr><th width="200" align="right">&#35; Days:</th><td width="200">{{ track.features[0].properties.days }}</td></tr>
+                <tr><th width="200" align="right">Dataset ID:</th><td width="200">{{ track.features[0].properties.dataset_id }}</td></tr>
+            </table>
+            <hr />
+            <table bgcolor="white">
+                <tr><td align="center"><a target="_blank" href="{{ track.features[0].properties.status_url }}">Dataset Status &amp; Imagery</a></td></tr>
+                <tr><td align="center"><a target="_blank" href="{{ track.features[0].properties.tabledap }}">ERDDAP Data Download</a></td></tr>
+                <tr><td align="center"><a target="_blank" href="{{ track.features[0].properties.make_a_graph }}">ERDDAP Plotting</a></td></tr>
+            </table>
+            ]]>
+        </description>
+        <Point>
+            <extrude>0</extrude>
+            <altitudeMode>absolute</altitudeMode>
+            <coordinates>{{ track.features[-1].geometry.coordinates[0] }},{{ track.features[-1].geometry.coordinates[1] }},5</coordinates>
+        </Point>
+        </Placemark> <!-- #currentPosition -->
+        <Placemark id="deploymentLocation">
+            <name>{{ track.features[0].properties.glider }} Deployment Location</name>
+            <visibility>1</visibility>
+            <open>0</open>
+            <styleUrl>#{{ track.features[0].properties.glider }}Deployment</styleUrl>
+            <description>
+                <![CDATA[<div align="center" width="200">Deployed on {{ track.features[0].properties.start_date }}</div>]]>
+            </description>
+        <Point>
+        <extrude>0</extrude>
+        <altitudeMode>absolute</altitudeMode>
+        <!--
+            <coordinates>-64.9695,18.1707,5</coordinates>
+        -->
+            <coordinates>{{ track.features[1].geometry.coordinates[0] }},{{ track.features[1].geometry.coordinates[1] }},5</coordinates>
+        </Point>
+        </Placemark>
+        
+        <Placemark>
+            <name>Track</name>
+            <styleUrl>#{{ track.features[0].properties.glider }}Track</styleUrl>
+            <Snippet></Snippet>
+            <LineString>
+                <extrude>0</extrude>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                    {% for point in track.features[0].geometry.coordinates %}
+                    {{ point[0] }},{{ point[1] }},5
+                    {% endfor %}
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Folder> <!-- #{{ track.features[0].properties.glider }} -->
+    {% endfor %}
+
+</Document>
+</kml>

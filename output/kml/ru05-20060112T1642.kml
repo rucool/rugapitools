@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<Document>
+
+    <name>RUCOOL Glider Deployments</name>
+    <description>1 Total Deployments</description>
+    <open>1</open>
+
+    
+    <!-- ru05 Deployment Position -->
+    <Style id="ru05Deployment">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F000</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru05 Current Position -->
+    <Style id="ru05Position">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F0FF</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru05 Track -->
+    <Style id="ru05Track">;
+        <LineStyle>
+            <color>ff00ffff</color>;
+            <width>2</width>
+        </LineStyle>
+    </Style>
+
+    <Folder id="ru05"> <!-- Glider: ru05 -->
+        <styleUrl>#ru05</styleUrl>
+        <name>ru05-20060112T1642</name>
+        <open>0</open>
+        <Placemark id="latestPosition">
+        <name>ru05-20060112T1642</name>
+        <styleUrl>#ru05Position</styleUrl>
+        <visibility>0</visibility>
+        <open>0</open>
+        <description>
+            <![CDATA[
+            <table bgcolor="white">
+                    <tr><th width="200" align="right">deployment:</th><td width="200">ru05-20060112T1642</td></tr><tr><th width="200" align="right">status:</th><td width="200">Recovered</td></tr><tr><th width="200" align="right">glider:</th><td width="200">ru05</td></tr><tr><th width="200" align="right">project:</th><td width="200">eline</td></tr><tr><th width="200" align="right">start_date:</th><td width="200">2006-01-12 16:42:00</td></tr><tr><th width="200" align="right">end_date:</th><td width="200">2006-02-02 16:32:00</td></tr><tr><th width="200" align="right">distance:</th><td width="200">395.712 km</td></tr><tr><th width="200" align="right">days:</th><td width="200">20</td></tr>
+            </table>
+            ]]>
+        </description>
+        <Point>
+            <extrude>0</extrude>
+            <altitudeMode>absolute</altitudeMode>
+            <coordinates>-74.375,38.749,5</coordinates>
+        </Point>
+        </Placemark> <!-- #currentPosition -->
+        <Placemark id="deploymentLocation">
+            <name>ru05</name>
+            <visibility>0</visibility>
+            <open>0</open>
+            <styleUrl>#ru05Deployment</styleUrl>
+            <description>
+                <![CDATA[<div align="center" width="200">Deployed on 2006-01-12 16:42:00</div>]]>
+            </description>
+        <Point>
+        <extrude>0</extrude>
+        <altitudeMode>absolute</altitudeMode>
+            <coordinates>-74.19,39.417,5</coordinates>
+        </Point>
+        </Placemark>
+        
+        <Placemark>
+            <name>Track</name>
+            <styleUrl>#ru05Track</styleUrl>
+            <Snippet></Snippet>
+            <LineString>
+                <extrude>0</extrude>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                    
+                    -74.19,39.417,5
+                    -74.182,39.421,5
+                    -74.18,39.422,5
+                    -74.129,39.417,5
+                    -74.113,39.383,5
+                    -74.074,39.385,5
+                    -74.064,39.381,5
+                    -74.062,39.381,5
+                    -74.059,39.38,5
+                    -74.041,39.383,5
+                    -74.041,39.383,5
+                    -74.041,39.387,5
+                    -74.013,39.391,5
+                    -74.01,39.375,5
+                    -74.017,39.385,5
+                    -73.982,39.377,5
+                    -73.966,39.369,5
+                    -73.957,39.348,5
+                    -73.956,39.327,5
+                    -73.956,39.327,5
+                    -74.002,39.252,5
+                    -74.002,39.213,5
+                    -73.999,39.175,5
+                    -74.007,39.164,5
+                    -74.015,39.148,5
+                    -74.015,39.148,5
+                    -74.004,39.138,5
+                    -73.973,39.117,5
+                    -73.972,39.114,5
+                    -73.951,39.095,5
+                    -73.947,39.087,5
+                    -73.923,39.054,5
+                    -73.903,39.075,5
+                    -73.886,39.087,5
+                    -73.822,39.1,5
+                    -73.802,39.125,5
+                    -73.79,39.113,5
+                    -73.807,39.116,5
+                    -73.805,39.124,5
+                    -73.797,39.12,5
+                    -73.796,39.112,5
+                    -73.8,39.115,5
+                    -73.803,39.124,5
+                    -73.79,39.134,5
+                    -73.784,39.135,5
+                    -73.78,39.135,5
+                    -73.775,39.134,5
+                    -73.77,39.133,5
+                    -73.77,39.133,5
+                    -73.763,39.135,5
+                    -73.751,39.133,5
+                    -73.75,39.133,5
+                    -73.75,39.133,5
+                    -73.75,39.133,5
+                    -73.728,39.125,5
+                    -73.728,39.125,5
+                    -73.724,39.135,5
+                    -73.701,39.146,5
+                    -73.686,39.147,5
+                    -73.656,39.148,5
+                    -73.653,39.148,5
+                    -73.649,39.15,5
+                    -73.647,39.152,5
+                    -73.644,39.154,5
+                    -73.643,39.156,5
+                    -73.64,39.159,5
+                    -73.638,39.161,5
+                    -73.638,39.161,5
+                    -73.593,39.197,5
+                    -73.494,39.188,5
+                    -73.541,39.204,5
+                    -73.52,39.221,5
+                    -73.497,39.243,5
+                    -73.457,39.254,5
+                    -73.425,39.25,5
+                    -73.417,39.258,5
+                    -73.408,39.267,5
+                    -73.39,39.282,5
+                    -73.381,39.285,5
+                    -73.36,39.283,5
+                    -73.334,39.277,5
+                    -73.317,39.291,5
+                    -73.291,39.288,5
+                    -73.286,39.303,5
+                    -73.246,39.312,5
+                    -73.246,39.312,5
+                    -73.234,39.319,5
+                    -73.209,39.313,5
+                    -73.208,39.31,5
+                    -73.201,39.326,5
+                    -73.183,39.332,5
+                    -73.165,39.309,5
+                    -73.137,39.326,5
+                    -73.109,39.33,5
+                    -73.108,39.323,5
+                    -73.115,39.335,5
+                    -73.113,39.337,5
+                    -73.111,39.332,5
+                    -73.09,39.337,5
+                    -73.084,39.33,5
+                    -73.084,39.33,5
+                    -73.074,39.328,5
+                    -73.139,39.307,5
+                    -73.155,39.303,5
+                    -73.231,39.331,5
+                    -73.248,39.327,5
+                    -73.27,39.324,5
+                    -73.316,39.311,5
+                    -73.333,39.26,5
+                    -73.359,39.266,5
+                    -73.331,39.257,5
+                    -73.331,39.257,5
+                    -73.331,39.257,5
+                    -73.329,39.255,5
+                    -73.317,39.258,5
+                    -73.3,39.257,5
+                    -73.283,39.245,5
+                    -73.283,39.245,5
+                    -73.283,39.245,5
+                    -73.284,39.24,5
+                    -73.283,39.239,5
+                    -73.283,39.239,5
+                    -73.289,39.237,5
+                    -73.289,39.237,5
+                    -73.289,39.237,5
+                    -73.389,39.266,5
+                    -73.447,39.249,5
+                    -73.462,39.242,5
+                    -73.547,39.258,5
+                    -73.574,39.259,5
+                    -73.632,39.238,5
+                    -73.687,39.232,5
+                    -73.725,39.248,5
+                    -73.771,39.258,5
+                    -73.781,39.216,5
+                    -73.87,39.25,5
+                    -73.871,39.249,5
+                    -73.919,39.242,5
+                    -73.955,39.266,5
+                    -73.971,39.297,5
+                    -73.942,39.318,5
+                    -73.922,39.359,5
+                    -73.883,39.351,5
+                    -73.909,39.349,5
+                    -73.911,39.32,5
+                    -73.922,39.32,5
+                    -73.945,39.353,5
+                    -73.907,39.331,5
+                    -73.944,39.324,5
+                    -73.947,39.325,5
+                    -74.032,39.227,5
+                    -74.064,39.2,5
+                    -74.095,39.134,5
+                    -74.095,39.134,5
+                    -74.129,39.064,5
+                    -74.176,39.023,5
+                    -74.203,38.986,5
+                    -74.257,38.872,5
+                    -74.263,38.87,5
+                    -74.268,38.865,5
+                    -74.27,38.862,5
+                    -74.272,38.836,5
+                    -74.275,38.795,5
+                    -74.305,38.785,5
+                    -74.323,38.788,5
+                    -74.337,38.745,5
+                    -74.356,38.746,5
+                    -74.362,38.746,5
+                    -74.367,38.747,5
+                    -74.371,38.748,5
+                    -74.375,38.749,5
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Folder> <!-- #ru05 -->
+    
+
+</Document>
+</kml>

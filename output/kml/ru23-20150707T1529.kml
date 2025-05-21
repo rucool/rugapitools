@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<Document>
+
+    <name>RUCOOL Glider Deployments</name>
+    <description>1 Total Deployments</description>
+    <open>1</open>
+
+    
+    <!-- ru23 Deployment Position -->
+    <Style id="ru23Deployment">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F000</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru23 Current Position -->
+    <Style id="ru23Position">
+        <IconStyle>
+            <Icon>
+    		    <href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+            </Icon>
+            <color>FF14F0FF</color>
+            <hotSpot x="0" xunits="fraction" y="0" units="fraction"/>
+            <scale>1.0</scale>
+        </IconStyle>
+    </Style>
+
+    <!-- ru23 Track -->
+    <Style id="ru23Track">;
+        <LineStyle>
+            <color>ff00ffff</color>;
+            <width>2</width>
+        </LineStyle>
+    </Style>
+
+    <Folder id="ru23"> <!-- Glider: ru23 -->
+        <styleUrl>#ru23</styleUrl>
+        <name>ru23-20150707T1529</name>
+        <open>0</open>
+        <Placemark id="latestPosition">
+        <name>ru23-20150707T1529</name>
+        <styleUrl>#ru23Position</styleUrl>
+        <visibility>0</visibility>
+        <open>0</open>
+        <description>
+            <![CDATA[
+            <table bgcolor="white">
+                    <tr><th width="200" align="right">deployment:</th><td width="200">ru23-20150707T1529</td></tr><tr><th width="200" align="right">status:</th><td width="200">Recovered</td></tr><tr><th width="200" align="right">glider:</th><td width="200">ru23</td></tr><tr><th width="200" align="right">project:</th><td width="200">IOOS</td></tr><tr><th width="200" align="right">start_date:</th><td width="200">2015-07-07 15:29:00</td></tr><tr><th width="200" align="right">end_date:</th><td width="200">2015-07-07 20:08:00</td></tr><tr><th width="200" align="right">distance:</th><td width="200">2.428 km</td></tr><tr><th width="200" align="right">days:</th><td width="200">0</td></tr>
+            </table>
+            ]]>
+        </description>
+        <Point>
+            <extrude>0</extrude>
+            <altitudeMode>absolute</altitudeMode>
+            <coordinates>-88.616,30.052,5</coordinates>
+        </Point>
+        </Placemark> <!-- #currentPosition -->
+        <Placemark id="deploymentLocation">
+            <name>ru23</name>
+            <visibility>0</visibility>
+            <open>0</open>
+            <styleUrl>#ru23Deployment</styleUrl>
+            <description>
+                <![CDATA[<div align="center" width="200">Deployed on 2015-07-07 15:29:00</div>]]>
+            </description>
+        <Point>
+        <extrude>0</extrude>
+        <altitudeMode>absolute</altitudeMode>
+            <coordinates>-88.639,30.047,5</coordinates>
+        </Point>
+        </Placemark>
+        
+        <Placemark>
+            <name>Track</name>
+            <styleUrl>#ru23Track</styleUrl>
+            <Snippet></Snippet>
+            <LineString>
+                <extrude>0</extrude>
+                <altitudeMode>absolute</altitudeMode>
+                <coordinates>
+                    
+                    -88.639,30.047,5
+                    -88.639,30.047,5
+                    -88.639,30.047,5
+                    -88.636,30.047,5
+                    -88.631,30.049,5
+                    -88.628,30.049,5
+                    -88.626,30.05,5
+                    -88.626,30.05,5
+                    -88.623,30.051,5
+                    -88.623,30.051,5
+                    -88.616,30.052,5
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Folder> <!-- #ru23 -->
+    
+
+</Document>
+</kml>
