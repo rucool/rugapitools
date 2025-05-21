@@ -1,4 +1,4 @@
-# rugapitools
+# Rutgers University Gliders API Tools
 Collection of python classes, functions and scripts for interacting with the 
 [RU-COOL Gliders API](https://marine.rutgers.edu/cool/data/gliders/api/).
 
