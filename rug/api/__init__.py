@@ -140,7 +140,8 @@ def deployments_json_to_df(response_json):
     deployments_df = pd.DataFrame(deployments)
 
     # Convert None in end_date_epoch to NaN
-    deployments_df.end_date_epoch.fillna(pd.NaT, inplace=True)
+#    deployments_df.end_date_epoch.fillna(pd.NaT, inplace=True)
+    deployments_df['end_date_epoch'] = deployments_df.end_date_epoch.fillna(pd.NaT)
 
     # Convert start_date_epoch and end_date_epoch to datetimes
     deployments_df['start_date'] = pd.to_datetime(deployments_df.start_date_epoch, unit='s')
